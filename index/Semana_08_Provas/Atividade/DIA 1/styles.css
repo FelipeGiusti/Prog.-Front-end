@@ -80,7 +80,14 @@ section p {
     text-align: start;
 }
 
-.botao {
+.botaoJogos {
+    display: flex;
+    justify-content: center;
+
+    padding: 20px;
+}
+
+.botaoRevela {
     display: flex;
     justify-content: center;
 
@@ -103,4 +110,24 @@ button {
     cursor: pointer;
 
     box-shadow: 10px 10px 20px lightgray;
+}
+
+.image {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    /* opacity: 0; */
+}
+
+.image h3 {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: start;
+}
+
+img {
+    width: 75%;
+    height: 75%;
 }
