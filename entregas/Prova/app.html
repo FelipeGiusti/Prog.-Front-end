@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Respostas da Prova | Front-end</title>
+    <style>
+        :root {
+            --bg: #0f1115;
+            --panel: #171a21;
+            --text: #e6e6e6;
+            --muted: #a6adbb;
+            --accent: #ffb74d;
+            --border: #232734;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: radial-gradient(900px 500px at 15% -10%, #1d2230, #0f1115);
+            color: var(--text);
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            min-height: 100vh;
+            padding: 24px;
+        }
+
+        .question-card {
+            max-width: 520px;
+            margin: 0 auto;
+            background: var(--panel);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 32px;
+            box-shadow: 0 10px 26px rgba(0, 0, 0, 0.35);
+        }
+
+        .question-header {
+            display: block;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            color: var(--accent);
+            margin-bottom: 24px;
+            border-left: 3px solid var(--accent);
+            padding-left: 12px;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        li {
+            width: 100%;
+        }
+
+        li a {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            text-decoration: none;
+            color: var(--text);
+            padding: 16px 20px;
+            background: #121621;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+            font-weight: 600;
+        }
+
+        li a:hover {
+            background: #141a27;
+            border-color: #2d3547;
+            transform: translateX(6px);
+        }
+
+        li a::after {
+            content: '→';
+            font-size: 18px;
+            opacity: 0.6;
+            transition: transform 0.25s;
+        }
+
+        li a:hover::after {
+            opacity: 1;
+            transform: translateX(4px);
+        }
+
+        .footer-note {
+            margin-top: 24px;
+            text-align: center;
+            font-size: 0.8rem;
+            color: var(--muted);
+        }
+
+        @media (max-width: 640px) {
+            body {
+                padding: 16px;
+            }
+
+            .question-card {
+                padding: 22px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="question-card">
+        <span class="question-header">Respostas da Prova</span>
+        <ul>
+            <li><a href="./questao_01.html">Questão 01</a></li>
+            <li><a href="./questao_02.html">Questão 02</a></li>
+            <li><a href="./questao_03.html">Questão 03</a></li>
+            <li><a href="./questao_04.html">Questão 04</a></li>
+        </ul>
+    </section>
+
+</body>
+
+</html>
